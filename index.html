@@ -64,8 +64,20 @@ limitations under the License.
     <p class="story-details-comment__author">{{ by }}{{#if time }}, {{ formatRelative time }}{{/if }}</p>
     <div class="story-details-comment__text">{{{ text }}}</div>
   </script>
-
-  <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+  
+      
+   <!-- Webfont loader-->
+      <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+<script>
+  WebFont.load({
+    google: {
+      families: ['Roboto:400,500,700']
+    }
+  });
+</script>
+  <!--
+      <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700' rel='stylesheet' type='text/css'>
+   -->
   <link rel="stylesheet" href="styles/app.css">
 
   </head>
