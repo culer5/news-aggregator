@@ -24,21 +24,21 @@ limitations under the License.
   <meta name="viewport" content="width=device-width">
   <meta name="theme-color" content="#FF6F00">
 
-  <script async src="third_party/handlebars-v3.0.0.js"></script>
+  <script src="third_party/handlebars-v3.0.0.js"></script>
   <script>
   if (typeof window.Intl !== 'undefined') {
     document.write('<script async src="third_party/handlebars-intl.min.js"><\/script>');
   }
   </script>
 
-  <script async id="tmpl-story" type="text/x-handlebars-template">
+  <script id="tmpl-story" type="text/x-handlebars-template">
     <h1 class="story__title">{{ title }}</h1>
     <div class="story__score">{{ score }}</div>
     <div class="story__by">Posted by {{ by }}{{#if time }}, {{ formatRelative time }}{{/if }}
     </div>
   </script>
 
-  <script async id="tmpl-story-details" type="text/x-handlebars-template">
+  <script id="tmpl-story-details" type="text/x-handlebars-template">
     <header class="story-details__header js-header">
       <h1 class="story-details__title">{{ title }}{{#if url }} <a class="story-details__title-link" href="{{url}}">({{ urlobj.hostname }})</a>{{/if}}</h1>
       <button class="story-details__close js-close">Close</button>
@@ -60,7 +60,7 @@ limitations under the License.
     </section>
   </script>
 
-  <script async id="tmpl-story-details-comment" type="text/x-handlebars-template">
+  <script id="tmpl-story-details-comment" type="text/x-handlebars-template">
     <p class="story-details-comment__author">{{ by }}{{#if time }}, {{ formatRelative time }}{{/if }}</p>
     <div class="story-details-comment__text">{{{ text }}}</div>
   </script>
@@ -88,9 +88,9 @@ limitations under the License.
       Powered by the <a href="https://github.com/HackerNews/API">Hacker News API</a>
     </footer>
 
-    <script async src="scripts/namespace.js"></script>
-    <script async src="scripts/data.js"></script>
-    <script async src="scripts/app.js"></script>
+    <script src="scripts/namespace.js"></script>
+    <script src="scripts/data.js"></script>
+    <script src="scripts/app.js"></script>
 
   </body>
 </html>
